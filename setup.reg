@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+; Marketplace Insights — força-instalação + auto-update no Chrome (por usuário, sem admin).
+; Dê 2 cliques neste arquivo, confirme, e reinicie o Chrome.
+; Não precisa de permissão de administrador.
+
+[HKEY_CURRENT_USER\Software\Policies\Google\Chrome\ExtensionInstallForcelist]
+"1"="kjnopcfjllcgmanbmpaibbonbcfgadbp;https://tiagopalermo.github.io/marketplace-insights-dist/updates.xml"
