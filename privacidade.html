@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Política de Privacidade — Buscai</title>
+<style>
+  :root { --ora:#ee4d2d; --ink:#1a1f2b; --mut:#5b6472; --line:#e7e9ee; --bg:#ffffff; --soft:#f7f8fa; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--soft); color: var(--ink);
+    font: 16px/1.65 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px 72px; }
+  header {
+    background: linear-gradient(135deg, #ff8a4c, #ee4d2d); color: #fff;
+    padding: 40px 0 34px; margin-bottom: 30px;
+  }
+  header .wrap { padding-bottom: 0; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; letter-spacing: .3px; }
+  .brand .dot { width: 12px; height: 12px; border-radius: 50%; background: #fff; box-shadow: 0 0 0 4px rgba(255,255,255,.28); }
+  h1 { margin: 16px 0 6px; font-size: 30px; letter-spacing: -.5px; }
+  .sub { opacity: .95; font-size: 15px; }
+  .card {
+    background: var(--bg); border: 1px solid var(--line); border-radius: 14px;
+    padding: 22px 26px; margin: 18px 0; box-shadow: 0 1px 2px rgba(20,24,35,.03);
+  }
+  .tldr { border-left: 4px solid var(--ora); background: #fff6f3; }
+  .tldr strong { color: var(--ora); }
+  h2 { font-size: 19px; margin: 30px 0 10px; letter-spacing: -.2px; }
+  h2 .n { color: var(--ora); font-weight: 800; margin-right: 8px; }
+  p { margin: 10px 0; color: #2a3240; }
+  ul { margin: 10px 0; padding-left: 22px; }
+  li { margin: 7px 0; color: #2a3240; }
+  code { background: var(--soft); border: 1px solid var(--line); border-radius: 5px; padding: 1px 6px; font-size: 13.5px; }
+  .muted { color: var(--mut); font-size: 14px; }
+  .ok::before { content: "✓"; color: #12a150; font-weight: 800; margin-right: 8px; }
+  .no::before { content: "✕"; color: #dc2626; font-weight: 800; margin-right: 8px; }
+  a { color: var(--ora); }
+  footer { text-align: center; color: var(--mut); font-size: 13.5px; margin-top: 36px; }
+  hr { border: none; border-top: 1px solid var(--line); margin: 26px 0; }
+</style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="brand"><span class="dot"></span> BUSCAI</div>
+      <h1>Política de Privacidade</h1>
+      <div class="sub">Extensão Buscai — Inteligência de Mercado Shopee</div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <p class="muted">Última atualização: 23 de julho de 2026</p>
+
+    <div class="card tldr">
+      <p style="margin-top:0"><strong>Resumo:</strong> a Buscai processa tudo <strong>localmente no seu navegador</strong>.
+      Ela <strong>não coleta, não transmite e não vende</strong> nenhum dado pessoal. Não há servidor próprio,
+      não há analytics e não há rastreamento. As informações usadas são as que a própria Shopee já carrega
+      na sua sessão enquanto você navega, e nada disso sai do seu computador.</p>
+    </div>
+
+    <p>Esta política descreve como a extensão de navegador <strong>Buscai — Inteligência de Mercado Shopee</strong>
+    (“Buscai”, “a extensão”, “nós”) trata informações. Ao instalar e usar a extensão, você concorda com as
+    práticas aqui descritas.</p>
+
+    <h2><span class="n">1.</span>Que informações a extensão acessa</h2>
+    <p>A Buscai funciona apenas em páginas da Shopee Brasil (<code>shopee.com.br</code>). Enquanto você navega
+    normalmente, o navegador já carrega os dados públicos dos anúncios exibidos. A extensão lê esses dados
+    diretamente da página para calcular e exibir estimativas de mercado, tais como:</p>
+    <ul>
+      <li>Métricas públicas de anúncios: quantidade vendida, faturamento estimado, preço, número de favoritos,
+      avaliações, data de criação e informações da loja (nome, localização, seguidores).</li>
+      <li>Imagens públicas do anúncio, quando você escolhe baixá-las.</li>
+    </ul>
+    <p class="muted">Todo esse processamento acontece em tempo real, dentro do seu navegador. A Buscai não faz
+    login por você, não navega sozinha e só enxerga a página que você já está vendo.</p>
+
+    <h2><span class="n">2.</span>O que a extensão NÃO acessa</h2>
+    <ul>
+      <li class="no">Suas credenciais de login, senha, cookies de sessão ou tokens da sua conta Shopee.</li>
+      <li class="no">Dados de pagamento, cartões, endereços ou informações financeiras pessoais.</li>
+      <li class="no">Suas mensagens, pedidos, carrinho ou qualquer dado privado da sua conta.</li>
+      <li class="no">Seu histórico de navegação fora da Shopee, ou qualquer outro site.</li>
+    </ul>
+
+    <h2><span class="n">3.</span>O que é armazenado e onde</h2>
+    <p>A Buscai guarda um mínimo de informações, e sempre <strong>apenas no seu próprio dispositivo</strong>
+    (via <code>chrome.storage.local</code>):</p>
+    <ul>
+      <li><strong>Suas configurações</strong> — por exemplo, a alíquota de imposto que você define para o cálculo
+      de margem. Serve só para lembrar sua preferência entre uma visita e outra.</li>
+      <li><strong>Um log técnico de diagnóstico</strong> — quando a Shopee muda a estrutura de dados e a extensão
+      não consegue interpretar um campo, ela registra localmente qual endpoint e quais campos falharam, com data
+      e hora. Isso ajuda a corrigir a ferramenta. Esse log <strong>não contém dados pessoais</strong> e nunca é
+      enviado para fora do seu computador.</li>
+    </ul>
+    <p>As imagens que você opta por baixar são salvas na <strong>sua pasta de Downloads</strong>, em uma subpasta
+    <code>Buscai/</code>, como qualquer download comum.</p>
+
+    <h2><span class="n">4.</span>Conexões de rede</h2>
+    <p>A extensão faz um <strong>único</strong> tipo de requisição de rede: quando você clica para baixar uma
+    imagem, ela busca essa imagem na rede de distribuição de imagens da própria Shopee (<code>cf.shopee.com.br</code>)
+    e a converte para JPEG no seu navegador. Essa requisição é feita <strong>sem enviar seus cookies</strong>
+    (<code>credentials: "omit"</code>). Nenhuma informação sua é enviada a nós nem a terceiros nesse processo.</p>
+
+    <h2><span class="n">5.</span>Permissões solicitadas e por quê</h2>
+    <ul>
+      <li><code>storage</code> — salvar suas configurações e o log de diagnóstico localmente.</li>
+      <li><code>downloads</code> — salvar na sua pasta de Downloads as imagens que você escolher baixar.</li>
+      <li><code>host_permissions</code> (<code>shopee.com.br</code>, <code>cf.shopee.com.br</code>) — permitir que a
+      extensão funcione nas páginas da Shopee e busque as imagens dos anúncios para download.</li>
+    </ul>
+
+    <h2><span class="n">6.</span>Compartilhamento com terceiros</h2>
+    <p class="ok">Nenhum. A Buscai não envia dados a servidores próprios, não usa serviços de analytics, não exibe
+    anúncios e não compartilha, vende ou aluga qualquer informação para terceiros.</p>
+
+    <h2><span class="n">7.</span>Retenção e exclusão</h2>
+    <p>Como os dados ficam só no seu dispositivo, você tem controle total. Para apagá-los, basta
+    <strong>remover a extensão</strong> do navegador (isso limpa o <code>chrome.storage.local</code> dela) ou
+    limpar os dados de navegação da extensão. As imagens já baixadas permanecem na sua pasta de Downloads até
+    que você as apague manualmente.</p>
+
+    <h2><span class="n">8.</span>Segurança</h2>
+    <p>Por não transmitir dados a servidores externos, a superfície de exposição é mínima: as informações não
+    trafegam pela internet a partir da extensão nem ficam hospedadas em nuvem sob nosso controle. Tudo permanece
+    no ambiente local do seu navegador.</p>
+
+    <h2><span class="n">9.</span>Uso previsto e isenção de responsabilidade</h2>
+    <p>As métricas exibidas são <strong>estimativas</strong> calculadas a partir de dados públicos e de taxas
+    padrão de mercado, destinadas a apoiar análises de mercado. Elas podem não corresponder aos números reais
+    de vendedores ou da plataforma. A Buscai é uma ferramenta <strong>independente</strong> e
+    <strong>não é afiliada, patrocinada ou endossada pela Shopee</strong>. Todas as marcas citadas pertencem aos
+    seus respectivos donos.</p>
+
+    <h2><span class="n">10.</span>Alterações nesta política</h2>
+    <p>Podemos atualizar esta política para refletir mudanças na extensão ou em requisitos legais. A data de
+    “Última atualização” no topo indica a versão vigente. Recomendamos revisá-la periodicamente.</p>
+
+    <h2><span class="n">11.</span>Contato</h2>
+    <p>Dúvidas sobre privacidade ou sobre a extensão? Fale com a gente:
+    <a href="mailto:tiagopalermo@gmail.com">tiagopalermo@gmail.com</a>.</p>
+
+    <hr>
+    <footer>
+      Buscai — Inteligência de Mercado Shopee · Ferramenta independente, sem afiliação com a Shopee.
+    </footer>
+  </main>
+</body>
+</html>
