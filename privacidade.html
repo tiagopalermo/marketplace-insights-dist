@@ -52,96 +52,135 @@
   </header>
 
   <main class="wrap">
-    <p class="muted">Última atualização: 23 de julho de 2026</p>
+    <p class="muted">Última atualização: 25 de novembro de 2026 (versão 0.3.4 da extensão)</p>
 
     <div class="card tldr">
-      <p style="margin-top:0"><strong>Resumo:</strong> o Marketplace Insights processa tudo
-      <strong>localmente no seu navegador</strong>. Ele <strong>não coleta, não transmite e não vende</strong>
-      nenhum dado pessoal. Não há servidor próprio, não há analytics e não há rastreamento. As informações
-      usadas são as que a própria Shopee já carrega na sua sessão enquanto você navega, e nada disso sai do
-      seu computador.</p>
+      <p style="margin-top:0"><strong>Resumo:</strong> as métricas que aparecem nas páginas da Shopee são
+      calculadas <strong>no seu navegador</strong>. Os recursos de equipe (coleções de anúncios, clientes,
+      análises e relatórios) usam o <strong>servidor do Marketplace Insights</strong> e só funcionam para quem
+      entra com uma conta autorizada: o login do CRM da equipe ou uma chave de acesso pessoal. Para isso,
+      tratamos o seu <strong>email e senha</strong> (só no momento do login, sem guardar a senha), o seu
+      <strong>nome, email e cargo</strong> e os <strong>dados públicos dos anúncios</strong> que você acompanha.
+      <strong>Não vendemos dados</strong>, não usamos analytics nem rastreamento e não exibimos anúncios.</p>
     </div>
 
     <p>Esta política descreve como a extensão de navegador <strong>Marketplace Insights</strong>
-    (“Marketplace Insights”, “a extensão”, “nós”) trata informações. Ao instalar e usar a extensão, você
-    concorda com as práticas aqui descritas.</p>
+    (“Marketplace Insights”, “a extensão”, “nós”) e o servidor que ela usa tratam informações. Ao instalar e
+    usar a extensão, você concorda com as práticas aqui descritas.</p>
 
-    <h2><span class="n">1.</span>Que informações a extensão acessa</h2>
-    <p>A extensão funciona apenas em páginas da Shopee Brasil (<code>shopee.com.br</code>). Enquanto você navega
-    normalmente, o navegador já carrega os dados públicos dos anúncios exibidos. A extensão lê esses dados
-    diretamente da página para calcular e exibir estimativas de mercado, tais como:</p>
+    <h2><span class="n">1.</span>O que funciona só no seu navegador</h2>
+    <p>A extensão roda apenas em páginas da Shopee Brasil (<code>shopee.com.br</code>). Enquanto você navega,
+    o navegador já carrega os dados públicos dos anúncios exibidos, e a extensão os lê da própria página para
+    mostrar estimativas de mercado, como quantidade vendida, faturamento estimado, preço, favoritos,
+    avaliações, data de criação e informações públicas da loja (nome, localização, seguidores).</p>
+    <p>Sem login, a extensão funciona só desse jeito: <strong>nada sai do seu computador</strong>, a não ser
+    as imagens e vídeos que você escolhe baixar (veja o item 5).</p>
+
+    <h2><span class="n">2.</span>Recursos de equipe e o que é enviado ao servidor</h2>
+    <p>Quem faz parte da equipe pode entrar no painel da extensão para usar coleções de anúncios, clientes,
+    análises de mercado e relatórios. Nesses casos:</p>
     <ul>
-      <li>Métricas públicas de anúncios: quantidade vendida, faturamento estimado, preço, número de favoritos,
-      avaliações, data de criação e informações da loja (nome, localização, seguidores).</li>
-      <li>Imagens e vídeo públicos do anúncio, quando você escolhe baixá-los.</li>
+      <li><strong>Login (email e senha do CRM da equipe).</strong> A senha é digitada só na página do painel
+      da extensão, nunca por cima de uma página da Shopee. A extensão a envia diretamente ao serviço de login
+      do CRM da equipe, que confirma a conta. <strong>A senha não é guardada</strong> nem pela extensão nem
+      pelo nosso servidor. O acesso que o CRM devolve é usado uma única vez para abrir uma sessão no nosso
+      servidor e encerrado logo em seguida; a sessão do Marketplace Insights dura até 12 horas e fica só
+      na memória temporária do navegador (some ao fechar o navegador).</li>
+      <li><strong>Seu cadastro.</strong> Do CRM recebemos o seu nome, email, cargo (por exemplo, CS ou SDR),
+      se a conta está ativa e a lista de clientes da sua carteira. Com isso o servidor sabe quem é você e
+      mostra os clientes que você atende.</li>
+      <li><strong>Chave de acesso pessoal</strong> (alternativa ao login, para acesso temporário). Fica guardada
+      no seu navegador e é conferida pelo servidor a cada uso.</li>
+      <li><strong>Dados públicos dos anúncios que a equipe acompanha.</strong> Quando um anúncio que está em
+      alguma coleção aparece numa busca ou é aberto por você, a extensão envia ao servidor os números públicos
+      que a própria página mostra (vendas, preço, variações, termo buscado). Anúncios fora das coleções não
+      são enviados.</li>
+      <li><strong>Registro de uso.</strong> O servidor anota quem fez o quê dentro da ferramenta (criou uma
+      coleção, incluiu um anúncio, gerou uma análise), para a equipe saber quem mexeu em cada item.</li>
     </ul>
-    <p class="muted">Todo esse processamento acontece em tempo real, dentro do seu navegador. A extensão não faz
-    login por você, não navega sozinha e só enxerga a página que você já está vendo.</p>
+    <p class="muted">A extensão não lê as suas credenciais, cookies ou dados da conta Shopee, e não navega
+    sozinha.</p>
 
-    <h2><span class="n">2.</span>O que a extensão NÃO acessa</h2>
+    <h2><span class="n">3.</span>O que a extensão NÃO acessa</h2>
     <ul>
-      <li class="no">Suas credenciais de login, senha, cookies de sessão ou tokens da sua conta Shopee.</li>
+      <li class="no">Login, senha, cookies de sessão ou tokens da sua conta Shopee.</li>
       <li class="no">Dados de pagamento, cartões, endereços ou informações financeiras pessoais.</li>
-      <li class="no">Suas mensagens, pedidos, carrinho ou qualquer dado privado da sua conta.</li>
-      <li class="no">Seu histórico de navegação fora da Shopee, ou qualquer outro site.</li>
+      <li class="no">Suas mensagens, pedidos, carrinho ou qualquer dado privado da sua conta Shopee.</li>
+      <li class="no">Seu histórico de navegação fora da Shopee ou qualquer outro site.</li>
     </ul>
 
-    <h2><span class="n">3.</span>O que é armazenado e onde</h2>
-    <p>A extensão guarda um mínimo de informações, e sempre <strong>apenas no seu próprio dispositivo</strong>
-    (via <code>chrome.storage.local</code>):</p>
+    <h2><span class="n">4.</span>O que fica guardado no seu navegador</h2>
     <ul>
-      <li><strong>Suas configurações</strong> — por exemplo, a alíquota de imposto que você define para o cálculo
-      de margem. Serve só para lembrar sua preferência entre uma visita e outra.</li>
-      <li><strong>Um log técnico de diagnóstico</strong> — quando a Shopee muda a estrutura de dados e a extensão
-      não consegue interpretar um campo, ela registra localmente qual endpoint e quais campos falharam, com data
-      e hora. Isso ajuda a corrigir a ferramenta. Esse log <strong>não contém dados pessoais</strong> e nunca é
-      enviado para fora do seu computador.</li>
+      <li><strong>Configurações</strong>, como a alíquota de imposto do cálculo de margem e as métricas que você
+      escolhe ver.</li>
+      <li><strong>Números recentes dos anúncios</strong> que você viu, para a página carregar mais rápido.</li>
+      <li><strong>Seu email do CRM</strong>, só para preencher o campo no próximo login (a senha nunca).</li>
+      <li><strong>Sua chave de acesso pessoal</strong>, se você usar uma.</li>
+      <li><strong>A sessão do painel</strong>, na memória temporária do navegador, apagada ao fechá-lo ou ao
+      clicar em “Sair”.</li>
+      <li><strong>Um log técnico</strong> de campos que a extensão não conseguiu ler quando a Shopee muda o
+      site, sem dados pessoais e sem envio para fora.</li>
     </ul>
-    <p>As imagens e vídeos que você opta por baixar são salvos na <strong>sua pasta de Downloads</strong>, em uma
-    subpasta <code>Marketplace Insights/</code>, como qualquer download comum.</p>
 
-    <h2><span class="n">4.</span>Conexões de rede</h2>
-    <p>A extensão faz um <strong>único</strong> tipo de requisição de rede: quando você clica para baixar uma
-    imagem ou vídeo, ela busca esse arquivo na rede de distribuição da própria Shopee
-    (<code>cf.shopee.com.br</code>) e o converte no seu navegador. Essa requisição é feita
-    <strong>sem enviar seus cookies</strong> (<code>credentials: "omit"</code>). Nenhuma informação sua é enviada
-    a nós nem a terceiros nesse processo.</p>
-
-    <h2><span class="n">5.</span>Permissões solicitadas e por quê</h2>
+    <h2><span class="n">5.</span>Conexões de rede</h2>
     <ul>
-      <li><code>storage</code> — salvar suas configurações e o log de diagnóstico localmente.</li>
-      <li><code>downloads</code> — salvar na sua pasta de Downloads as imagens e vídeos que você escolher baixar.</li>
-      <li><code>host_permissions</code> (<code>shopee.com.br</code>, <code>cf.shopee.com.br</code>) — permitir que a
-      extensão funcione nas páginas da Shopee e busque as mídias dos anúncios para download.</li>
+      <li><strong>Mídias da Shopee</strong> (<code>cf.shopee.com.br</code>): quando você pede para baixar uma imagem
+      ou vídeo, sem enviar seus cookies. O arquivo vai para a sua pasta de Downloads, em
+      <code>Marketplace Insights/</code>.</li>
+      <li><strong>Serviço de login do CRM da equipe</strong>: só no momento em que você entra e para encerrar
+      o acesso logo depois.</li>
+      <li><strong>Servidor do Marketplace Insights</strong> (hospedado no Supabase): para os recursos de equipe
+      do item 2, sempre por conexão criptografada (HTTPS).</li>
     </ul>
 
-    <h2><span class="n">6.</span>Compartilhamento com terceiros</h2>
-    <p class="ok">Nenhum. A extensão não envia dados a servidores próprios, não usa serviços de analytics, não
-    exibe anúncios e não compartilha, vende ou aluga qualquer informação para terceiros.</p>
+    <h2><span class="n">6.</span>Com quem os dados são compartilhados</h2>
+    <p>Não vendemos, alugamos nem compartilhamos dados para publicidade. Só usamos estes prestadores, para
+    fazer a ferramenta funcionar:</p>
+    <ul>
+      <li><strong>Supabase</strong>: hospeda o servidor e o banco de dados.</li>
+      <li><strong>Anthropic (Claude) e Google (Gemini)</strong>: quando alguém da equipe pede uma análise de
+      mercado escrita, o servidor envia a eles os <strong>dados públicos dos anúncios</strong> da coleção
+      (vendas, preços, títulos). Nome, email ou outro dado pessoal não vão nesse envio.</li>
+    </ul>
+    <p>Dentro da equipe, as coleções, clientes e análises são compartilhados entre as pessoas com acesso.</p>
 
-    <h2><span class="n">7.</span>Retenção e exclusão</h2>
-    <p>Como os dados ficam só no seu dispositivo, você tem controle total. Para apagá-los, basta
-    <strong>remover a extensão</strong> do navegador (isso limpa o <code>chrome.storage.local</code> dela) ou
-    limpar os dados de navegação da extensão. As mídias já baixadas permanecem na sua pasta de Downloads até
-    que você as apague manualmente.</p>
+    <h2><span class="n">7.</span>Por quanto tempo guardamos</h2>
+    <ul>
+      <li><strong>Senha:</strong> não é guardada.</li>
+      <li><strong>Sessões:</strong> valem até 12 horas e são apagadas do servidor 30 dias depois de vencerem.</li>
+      <li><strong>Números dos anúncios lidos no site:</strong> até 180 dias.</li>
+      <li><strong>Cadastro (nome, email, cargo) e registro de uso:</strong> enquanto a pessoa fizer parte da
+      equipe. Um administrador pode desativar o acesso a qualquer momento, e isso encerra as sessões abertas
+      em até 1 minuto.</li>
+      <li><strong>Dados no seu navegador:</strong> até você clicar em “Sair”, limpar os dados da extensão ou
+      removê-la.</li>
+    </ul>
 
     <h2><span class="n">8.</span>Segurança</h2>
-    <p>Por não transmitir dados a servidores externos, a superfície de exposição é mínima: as informações não
-    trafegam pela internet a partir da extensão nem ficam hospedadas em nuvem sob nosso controle. Tudo permanece
-    no ambiente local do seu navegador.</p>
+    <ul>
+      <li>A senha só é digitada na página do painel da extensão, que nenhum site consegue abrir ou embutir.</li>
+      <li>O servidor guarda apenas uma impressão digital (hash) das sessões e das chaves, nunca o código em si.</li>
+      <li>Cada login é conferido com o CRM: a conta precisa existir, estar ativa e ter o email confirmado.</li>
+      <li>O banco de dados não é acessível pela internet sem passar pelas verificações do servidor.</li>
+    </ul>
 
-    <h2><span class="n">9.</span>Uso previsto e isenção de responsabilidade</h2>
+    <h2><span class="n">9.</span>Seus direitos</h2>
+    <p>Pela Lei Geral de Proteção de Dados (LGPD), você pode pedir para saber quais dados seus temos,
+    corrigi-los ou apagá-los, além de tirar dúvidas sobre o tratamento. É só escrever para o contato do
+    item 12.</p>
+
+    <h2><span class="n">10.</span>Uso previsto e isenção de responsabilidade</h2>
     <p>As métricas exibidas são <strong>estimativas</strong> calculadas a partir de dados públicos e de taxas
     padrão de mercado, destinadas a apoiar análises de mercado. Elas podem não corresponder aos números reais
     de vendedores ou da plataforma. O Marketplace Insights é uma ferramenta <strong>independente</strong> e
     <strong>não é afiliado, patrocinado ou endossado pela Shopee</strong>. Todas as marcas citadas pertencem aos
     seus respectivos donos.</p>
 
-    <h2><span class="n">10.</span>Alterações nesta política</h2>
+    <h2><span class="n">11.</span>Alterações nesta política</h2>
     <p>Podemos atualizar esta política para refletir mudanças na extensão ou em requisitos legais. A data de
-    “Última atualização” no topo indica a versão vigente. Recomendamos revisá-la periodicamente.</p>
+    “Última atualização” no topo indica a versão vigente.</p>
 
-    <h2><span class="n">11.</span>Contato</h2>
+    <h2><span class="n">12.</span>Contato</h2>
     <p>Dúvidas sobre privacidade ou sobre a extensão? Fale com a gente:
     <a href="mailto:we.hunterxvitor@gmail.com">we.hunterxvitor@gmail.com</a>.</p>
 
